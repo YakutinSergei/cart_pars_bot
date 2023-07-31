@@ -19,8 +19,6 @@ async def main_menu():
     return inline_markup.as_markup()
 
 
-
-
 async def premium_parsing_menu():
     inline_markup: InlineKeyboardBuilder = InlineKeyboardBuilder()
     buttons: list[InlineKeyboardButton] = []
