@@ -3,6 +3,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 
+'''Изначальное меню'''
 async def main_menu():
     inline_markup: InlineKeyboardBuilder = InlineKeyboardBuilder()
     buttons: list[InlineKeyboardButton] = []
@@ -18,7 +19,7 @@ async def main_menu():
     inline_markup.row(*buttons, width=1)
     return inline_markup.as_markup()
 
-
+'''Меню премиум'''
 async def premium_parsing_menu():
     inline_markup: InlineKeyboardBuilder = InlineKeyboardBuilder()
     buttons: list[InlineKeyboardButton] = []
@@ -39,7 +40,7 @@ async def premium_parsing_menu():
     return inline_markup.as_markup()
 
 
-
+''''''
 async def last_active_menu():
     inline_markup: InlineKeyboardBuilder = InlineKeyboardBuilder()
     buttons: list[InlineKeyboardButton] = []
@@ -55,7 +56,7 @@ async def last_active_menu():
     inline_markup.row(*buttons, width=1)
     return inline_markup.as_markup()
 
-
+'''Админ меню'''
 async def admin_menu():
     inline_markup: InlineKeyboardBuilder = InlineKeyboardBuilder()
     buttons: list[InlineKeyboardButton] = []
